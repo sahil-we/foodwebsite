@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zomato</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		.zomatopic{
+			background-image: url(food.png);
+			height: 420px;
+			min-width: 100px;
+			max-width: 100%;
+			text-align: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: white;
+		}
+		.zomatopic p{
+			font-size: 38px;
+			position: relative;
+			top: 65px;
+		}
+		.zomatopic a{
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+			margin-left: 20px;
+			position: relative;
+			top: 20px;
+		}
+		.zomatopic a:nth-child(1){
+			font-size: 17px;
+			margin: 0px 450px 0px -12px;
+			position: relative;
+			top: 15px;
+		}
+		#maintext{
+			font-size: 85px;
+			font-weight: bold;
+		}
+		.threediv{
+			height: 230px;
+			width: 370px;
+			float: left;
+			border: 1px lightgray solid;
+			margin-left: 27px;
+			border-radius: 15px;
+			transition: 0.4s;
+			margin-bottom: 10px;
+		}
+		#threedivid{
+		margin-left: 11%;
+		}
+		.threediv img{
+			width: 370px;
+			height: 150px;
+			border-radius: 15px 15px 0px 0px;
+		}
+		.threediv p{
+			position: relative;
+			top: 10px;
+			left: 15px;
+			font-size: 15px;
+			letter-spacing: 1px;
+		}
+		.threediv p:first-line{
+			font-size: 17px;
+			font-weight: bold;
+		}
+		.threediv:hover{
+			transform: scale(1.06);
+		}
+		.collectionbox p{
+			font-size: 20px;
+			font-family: sans-serif;
+
+		}
+		.collectionbox{
+			margin-right: 11%;
+			clear: both;
+			padding-top: 80px;
+			margin-left: 11%;
+		}
+		.collectionbox p:nth-child(1){
+			font-size: 40px;
+			font-weight: bold;
+		}
+		#redtext{
+			font-size: 17px;
+			color: red;
+		 	float: right;
+		 	position: relative;
+		 	bottom: 20px;
+		 	text-decoration: none;
+		}
+		.collectiondiv{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-left: 11%;
+			margin-right: 11%;
+
+		}
+		.collectiondiv div{
+			min-height: 350px;
+			min-width: 250px;
+			background-color: blue;
+			margin-bottom: 20px;
+			border-radius: 15px;
+	}
+		.citydiv{
+			//width: 1166px;
+			margin-left: 11%;
+			margin-right: 11%;
+			padding-top: 80px; 
+		}
+		.citydiv p{
+			font-size: 30px;
+		}
+		.cites{
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: 11%;
+			padding-top: 80px; 
+			margin-right: 11%;
+
+					}
+		.cites div{
+			height: 80px;
+			margin-right: 10px;
+			width: 370px;
+			border: 1px solid lightgray;
+			border-radius: 10px;
+			margin-bottom: 20px; 
+			transition: 0.5s;
+			padding: 15px;
+			letter-spacing: 1px;
+
+		}
+		.cites div:hover{
+			box-shadow: 0px 2px 1px 0px lightgray;
+		}
+		.cites p{
+			font-size: 15px;
+			font-family: sans-serif;
+		}
+		.cites p:first-line{
+			font-size: 20px;
+		}	
+		.cites div:nth-child(9){
+		padding: 26px;
+		}
+		.Explorediv{
+			font-size: 30px;
+			margin-top: 30px;
+			margin-left: 11%;
+			margin-right: 11%;
+			font-family: sans-serif;
+			margin-bottom: 20px;
+		}
+		.innerdiv div{
+			margin-left: 11%;
+			margin-right: 15%;
+			border: 1px solid lightgray;
+			border-radius: 10px;
+			height: 70px;
+			margin-bottom: 20px; 
+			padding: 20px;
+		}
+		.innerdiv div a{
+			font-size: 20px;
+			text-decoration: none;
+			color: black;
+			width: 100%;
+			height: 100%;
+
+		}
+		.footerdiv{
+			margin-top: 40px;
+			background-color: #f8f8f8;
+			height: 450px;
+			padding-top: 50px;
+		}
+		.footerinnerdiv{
+			margin-left: 11%;
+			margin-right: 15%;
+			height: 100%;
+		}
+		.footerinnerdiv img{
+			max-width: 5%
+			min-width: 10%;
+			max-width: 10%;
+			max-height: 5%;
+		}
+		.footerinnerdiv div{
+			float: right;
+			margin-left: 25px;
+			border: 1px solid gray;
+			border-radius: 10px;
+			padding: 10px 30px 10px 30px;
+			//width: 130px;
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<i class="sc-rbbb40-1 iFnyeo sc-eZXMBi hGbhcO" size="10" color="#FFFFFF"></i>
+		<div class="zomatopic"><a href="#">Get the app</a>
+			<a href="#">Investor Relations</a>
+				<a href="#">Add restaurant</a>
+					<a href="#">Log in</a>
+					<a href="#">Sign up</a>
+			<p id="maintext">zomato</p><BR>
+			<p>Discover the best food & drinks in delhi NCR</p>
+		</div></header><br><br>
+		<div class="threediv" id="threedivid"><img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:180;*,*" alt="net on krle"><p>Order Online<br><br>
+
+Stay home and order to your doorstep</p></div>
+		<div class="threediv"><img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:180;*,*" alt="net on krle"><p>Dining<br><br></ruby>
+
+View the city's favourite dining venues</p></div>
+		<div class="threediv"><img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:180;*,*" alt="net on krle"><p>
+Nightlife and Clubs<br><br>
+
+Explore the city’s top nightlife outlets</p></div>
+<div class="collectionbox"><p>Collections</P><br>
+<p>Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</p>
+<a id="redtext" href="#">All collections in Delhi NCR</a><br><br></div>
+<div class="collectiondiv">
+	<div class="fourdiv">
+	
+</div>
+<div class="fourpicdiv">
+	
+</div>
+<div class="fourpicdiv">
+	
+</div>
+<div class="fourpicdiv">
+	
+</div>
+</div>
+<div class="citydiv"><p>Popular localities in and around Delhi NCR</p></div>
+<div class="cites">
+<div><p>Connaught Place<br><br>
+240 places</p></div>
+<div><p>Sector 29<br><br>
+132 places</p></div>
+<div><p>Sector 18, Noida<br><br>
+192 places</p></div>
+<div><p>Rajouri Garden<br><br>
+268 places</p></div>
+<div><p>Saket<br><br>
+302 places</p></div>
+<div><p>DLF Cyber City<br><br>
+145 places</p></div>
+<div><p>Golf Course Road<br><br>
+156 places</p></div>
+<div><p>DLF Phase 4<br><br>
+208 places</p></div>
+<div><center><p>see more</p></center>
+</div>
+</div>
+<div class="Explorediv"><p>Explore options near me</p></div>
+<div class="innerdiv"><div><a href="">Popular cuisines near me</a></div>
+<div><a href="">Popular restaurant types near me</a></div>
+<div><a href="">Top Restaurant Chains</a></div><div><a href="">Cities We Deliver To</a></div>
+</div>
+<div class="footerdiv"><div class="footerinnerdiv">
+	<img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*"><div><p>Language</p></div><div><p>India</p></div>
+</div>
+</body>
+</html>
